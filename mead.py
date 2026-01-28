@@ -247,6 +247,7 @@ def page(random_num):
         #st.write(f'这是第{num+1+random_num*video_num}个视频，名称为{file_list[num+random_num*video_num].rstrip()}')
         st.subheader(fr"Video {num+1}")
         filename = file_list[num+random_num*video_num].rstrip()
+        print(num+random_num*video_num)
         video_bytes = play_video(filename)
         st.video(video_bytes)
         emotion = get_emotion(filename)

@@ -289,9 +289,9 @@ def page(random_num):
 
 if __name__ == '__main__':
     dataset = 'MEAD' 
-    video_num = 18
+    video_num = 10
     times = 3
-    random_range = 10  
+    random_range = 3  
     
     st.set_page_config(page_title="userstudy")
     #st.cache_data.clear() # 初始化
